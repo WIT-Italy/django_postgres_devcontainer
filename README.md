@@ -15,25 +15,16 @@ For a complete list of dependencies, refer to the `requirements.txt` file.
 - Visual Studio Code (optional, if using Devcontainers)
 
 ## Environment Configuration
-You can configure the behavior of the application using the following environment variables:
+You can configure the behavior of the application using the environment variables specified in the `.env.example` file. Copy this file to `.env` and adjust the values as needed:
 
-| Variable             | Description                                       | Example                                      |
-|----------------------|---------------------------------------------------|----------------------------------------------|
-| `DEBUG`              | Enables debug mode (0 for production)             | `1`                                          |
-| `SECRET_KEY`         | Secret key for your Django application            | `foo`                                        |
-| `SQL_ENGINE`         | DB engine (default is sqllite if not specified)   | `django.db.backends.postgresql`              |
-| `POSTGRES_DB`        | Your Database name                                | `postres_database_name`                      |
-| `POSTGRES_USER`      | Your PostgreSQL user                              | `postgres_user_name`                         |
-| `POSTGRES_PASSWORD`  | Your PostgreSQL user's password                   | `*****`                                      |
-| `SQL_HOST`           | Hostname for the PostgreSQL database              | `db`                                         |
-| `SQL_PORT`           | Port number for the PostgreSQL database           | `5432`                                       |
-| `DATABASE`           | Database type (Keep as 'postgres' for this setup) | `postgres`                                   |
-
+```sh
+cp .env.example .env
+```                                |
 
 ## Initial Setup and Installation
 
 1. **Clone the Repository**:
-`git clone git@github.com:twine003/django_postgres_devcontainer.git`
+`git clone git@github.com:https://github.com/WIT-Italy/django_postgres_devcontainer.git`
 
 
 2. **Environment Setup**:
